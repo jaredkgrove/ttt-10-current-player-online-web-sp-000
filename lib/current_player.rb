@@ -8,10 +8,5 @@ def turn_count(board)
 end
 
 def current_player(board)
-  even? =~ /hello/i ? "greeting" : "other"
-  if turn_count(board).even?
-    "X"
-  else
-    "O"
-  end
+  turn_count(board).even? ? "X" : "O"
 end
